@@ -4,7 +4,7 @@
     "title":"1 Here is where the title will go",
     "subtitle":"subtitle",
     "authorName":"Author Name",
-    "postedDate":"2023-10-05 18:18:51.000",
+    "postDate":"2023-10-05 18:18:51.000",
     "content":"Long text to be displayed",
     "imageUrl":"https://th.bing.com/th/id/R.a2cde4aa7d6eeca411764b7dc3b9eaa3?rik=jqYjWjazXSmIjQ&pid=ImgRaw&r=0"
 },
@@ -12,14 +12,14 @@
     "title":"2 Here is where the title will go",
     "subtitle":"subtitle",
     "authorName":"Author Name",
-    "postedDate":"2023-10-05 18:18:51.000",
+    "postDate":"2023-10-05 18:18:51.000",
     "content":"Long text to be displayed",
     "imageUrl":"https://th.bing.com/th/id/R.a2cde4aa7d6eeca411764b7dc3b9eaa3?rik=jqYjWjazXSmIjQ&pid=ImgRaw&r=0"
 },    {
     "title":"3 Here is where the title will go",
     "subtitle":"subtitle",
     "authorName":"Author Name",
-    "postedDate":"2023-10-05 18:18:51.000",
+    "postDate":"2023-10-05 18:18:51.000",
     "content":"Long text to be displayed",
     "imageUrl":"https://th.bing.com/th/id/R.a2cde4aa7d6eeca411764b7dc3b9eaa3?rik=jqYjWjazXSmIjQ&pid=ImgRaw&r=0"
 },    
@@ -27,7 +27,7 @@
     "title":"4 Here is where the title will go",
     "subtitle":"subtitle",
     "authorName":"Author Name",
-    "postedDate":"2023-10-05 18:18:51.000",
+    "postDate":"2023-10-05 18:18:51.000",
     "content":"Long text to be displayed",
     "imageUrl":"https://th.bing.com/th/id/R.a2cde4aa7d6eeca411764b7dc3b9eaa3?rik=jqYjWjazXSmIjQ&pid=ImgRaw&r=0"
 },
@@ -35,7 +35,7 @@
     "title":" 5 Here is where the title will go",
     "subtitle":"subtitle",
     "authorName":"Author Name",
-    "postedDate":"2023-10-05 18:18:51.000",
+    "postDate":"2023-10-05 18:18:51.000",
     "content":"Long text to be displayed",
     "imageUrl":"https://th.bing.com/th/id/R.a2cde4aa7d6eeca411764b7dc3b9eaa3?rik=jqYjWjazXSmIjQ&pid=ImgRaw&r=0"
 }
