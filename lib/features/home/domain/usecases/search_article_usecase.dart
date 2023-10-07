@@ -1,7 +1,7 @@
 
 
 
-import 'package:starter_project/core/error/failure.dart';
+import 'package:starter_project/core/error/failures.dart';
 import 'package:dartz/dartz.dart';
 import 'package:starter_project/core/usecase/usecase.dart';
 import 'package:starter_project/features/home/domain/entity/article.dart';

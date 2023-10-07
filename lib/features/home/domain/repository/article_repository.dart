@@ -1,6 +1,6 @@
 
 import 'package:dartz/dartz.dart';
-import 'package:starter_project/core/error/failure.dart';
+import 'package:starter_project/core/error/failures.dart';
 import 'package:starter_project/features/home/data/model/article_model.dart';
 import 'package:starter_project/features/home/domain/entity/article.dart';
 
