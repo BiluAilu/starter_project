@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
+import 'package:starter_project/core/error/exception.dart';
 import 'package:starter_project/core/error/failures.dart';
 import 'package:starter_project/core/network/network_info.dart';
 import 'package:starter_project/features/home/data/model/article_model.dart';
@@ -28,7 +29,7 @@ class ArticleRepositoryImpl implements ArticleRepository {
         final remoteArticles = await remoteDataSource.getArticles();
         
         return Right(remoteArticles);
-      } on ServerFailure {
+      } on ServerException {
         return Left(ServerFailure());
       }
     } else {

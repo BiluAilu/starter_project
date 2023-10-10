@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:starter_project/core/error/exception.dart';
 import 'package:starter_project/core/error/failures.dart';
 import 'package:starter_project/features/home/data/model/article_model.dart';
 
 import 'package:http/http.dart' as http;
-import 'package:starter_project/features/home/domain/usecases/search_article_usecase.dart';
 
 abstract class ArticleRemoteDataSource {
   /// Calls the "https://mocki.io/v1/f52c9d10-0f2e-4cc2-9813-9c83722587f7" endpoint.
@@ -37,7 +37,7 @@ class ArticleRemoteDataSourceImpl implements ArticleRemoteDataSource {
 
   @override
   Future<List<ArticleModel>> searchArticles() {
-   
+  //  
     return _getArticlesFromUrl('https://mocki.io/v1/f52c9d10-0f2e-4cc2-9813-9c83722587f7');
   }
 
@@ -50,7 +50,7 @@ class ArticleRemoteDataSourceImpl implements ArticleRemoteDataSource {
     .map((json) => ArticleModel.fromJson(json))
     .toList();
     } else {
-      throw ServerFailure();
+      throw ServerException();
     }
   }
   
