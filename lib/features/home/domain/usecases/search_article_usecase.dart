@@ -12,8 +12,8 @@ class SearchArticles implements Usecase<List<Article>,String>{
 
     SearchArticles(this.repository);
   @override
-  Future<Either<Failure, List<Article>>> call(String params) async{
-      return await repository.getAll();
+  Future<Either<Failure, List<Article>>> call(String title) async{
+      return await repository.search(title);
    
   }
 

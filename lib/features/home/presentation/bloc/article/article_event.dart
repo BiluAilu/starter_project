@@ -15,13 +15,12 @@ List<Object>get props=>[];
 
 class GetListOfArticle extends ArticleEvent{
 
-  final List<Article> articles;
-  GetListOfArticle(this.articles);
+  
 }
 
 class GetSearchOfArticle extends ArticleEvent{
-  final List<Article> articles;
-  GetSearchOfArticle(this.articles);
+  final String title;
+  GetSearchOfArticle(this.title);
 
 
 }

@@ -13,7 +13,7 @@ abstract class ArticleRemoteDataSource {
   /// Throws a [ServerFailure] for all error codes.
   Future<List<ArticleModel>> getArticles();
 
-  Future<List<ArticleModel>> searchArticles();
+  Future<List<ArticleModel>> searchArticles(String title);
 
   
 
@@ -36,8 +36,8 @@ class ArticleRemoteDataSourceImpl implements ArticleRemoteDataSource {
     
 
   @override
-  Future<List<ArticleModel>> searchArticles() {
-  //  
+  Future<List<ArticleModel>> searchArticles(String title) {
+  // ! I couldn't use the passed title cause my api doesn't support filtering , so instead I just return all values form my api
     return _getArticlesFromUrl('https://mocki.io/v1/f52c9d10-0f2e-4cc2-9813-9c83722587f7');
   }
 

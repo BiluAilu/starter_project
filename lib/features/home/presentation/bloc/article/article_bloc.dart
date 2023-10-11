@@ -31,8 +31,19 @@ class ArticleBloc extends Bloc<ArticleEvent,ArticleState>{
 
 
   on<GetSearchOfArticle>((event, emit)async {
-      final failureOrArticles= await searchArticles("");
-  });
+      // final failureOrArticles= await searchArticles("");
+
+      emit(Loading());
+      final failureOrSearchedArticles=await searchArticles(event.title);
+      failureOrSearchedArticles.fold((failure) {
+          emit(Error(message: mapFailerToMessage(failure)));
+      }, (searched_articles)  {
+          emit(Loaded(articles: searched_articles));
+      });
+  }
+  
+  
+  );
  }
 
 }

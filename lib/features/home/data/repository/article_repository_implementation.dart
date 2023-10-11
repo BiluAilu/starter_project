@@ -42,7 +42,15 @@ class ArticleRepositoryImpl implements ArticleRepository {
   }
 
   @override
-  Future<Either<Failure, List<Article>>> search(String term) {
+  Future<Either<Failure, List<Article>>> search(String title) async{
+    if(await networkInfo.isConnected){
+      try{
+
+        final remoteSearchedArticle=await remoteDataSource.searchArticles(title);
+      }on ServerException{
+        return Left(ServerFailure());
+      }
+    }
    
     throw UnimplementedError();
   }
